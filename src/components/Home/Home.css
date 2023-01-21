@@ -3,8 +3,13 @@
     width: 100vw;
     height: 100vh;
     background-image: url(C:\Users\Junior\Documents\spacet-website\src\assets\home\background-home-desktop.jpg);
-    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home_content{
     width: 63rem;
@@ -41,7 +46,73 @@
     width: 17rem;
     height: 17rem;
 }
+.home_content-circle:not(:hover){
+    -webkit-animation: getdown 1.0s forwards;
+}
+.home_content-circle:hover{
+    -webkit-animation: getup 1.0s forwards;
+}
 .home_content-circle p{
     font-family: 'Bellefair', serif;
     font-size: 32px;
+}
+
+@keyframes getup {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes getdown {
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .home_content{
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: baseline;
+    }      
+}   
+@media screen and (max-width: 768px) {
+    .home_container{
+        background-image: url(C:\Users\Junior\Documents\spacet-website\src\assets\home\background-home-tablet.jpg);
+        align-items: center;
+        justify-content: center;
+    }
+    .home_content{
+        align-items: center;
+        justify-content: center;
+        width: 1%
+    }
+    .home_content-text{
+        width: 31rem;
+    }
+    .home_content-circle:not(:hover){
+        -webkit-animation: none;
+    }
+    .home_content-circle:hover{
+        -webkit-animation: none;
+    }
+    .home_content-right{
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+
+@media screen and (max-width: 350px) {
+
 }
