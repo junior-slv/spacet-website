@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+.home_container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(C:\Users\Junior\Documents\spacet-website\src\assets\home\background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home_content{
+    width: 63rem;
+
+    display: flex;
+    justify-content: space-between
+}
+.home_content-text{
+    width: 21rem;
+}
+.home_content-text h4{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+}
+.home_content-text h2{
+    color: #fff;
+    font-size: 150px;
+    font-family: 'Bellefair', serif;
+}
+.home_content-text p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+
+.home_content-right{
+    align-items: center;
+    display: flex;
+    width: 25rem;
+    justify-content: flex-end;
+}
+.home_content-circle{
+    background: #fff;
+    border-radius: 10rem;
+    width: 17rem;
+    height: 17rem;
+}
+.home_content-circle p{
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+}
